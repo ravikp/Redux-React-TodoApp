@@ -1,0 +1,7 @@
+const INBACKLOG = 'INBACKLOG';
+const INPROGRESS = 'INPROGRESS';
+const DONE = 'DONE';
+
+const STATUS = {INBACKLOG, INPROGRESS, DONE};
+
+export default STATUS;

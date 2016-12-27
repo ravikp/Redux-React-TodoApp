@@ -1,0 +1,113 @@
+container {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+
+    container-header {
+        display: flex;
+        height: 10%;
+
+        add-project-container {
+            flex-grow: 1;
+            display: block;
+            margin-left: 20px;
+            margin-top: 20px;
+
+            label {
+                margin-right: 20px;
+            }
+        }
+
+        total-projects-container {
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+            margin-right: 1%;
+            justify-content: space-around;
+
+            span {
+                text-align: center;
+                margin-top: 5%;
+            }
+
+            total-projects {};
+        }
+    }
+
+    group-list {
+        display: flex;
+        justify-content: center;
+
+        group {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            width: 33%;
+            display: flex;
+
+            group-header {
+                display: flex;
+                height: 80px;
+                background-color: rgba(10, 10, 10, 0.48);
+                align-items: center;
+
+                title {
+                  font-weight: bold;
+                  font-size: larger;
+                  font-family: serif;
+                  color: white;
+
+                  display: block;
+                  flex-grow: 1;
+                  margin-left: 10px;
+                }
+
+                total-projects {}
+            }
+
+            items {
+                display: flex;
+                flex-direction: column;
+
+                item {
+                    padding: 20px 10px;
+                    border-top: 1px solid gray;
+                    border-bottom: 1px solid gray;
+                    background-color: white;
+                    display: flex;
+
+                    project-box {
+                        display: flex;
+                        flex-grow: 1;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+total-projects {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3px;
+    font-weight: normal;
+    background-color: white;
+    margin-right: 10px;
+
+    .projects-label {
+        color: gray;
+        font-weight: lighter;
+        font-size: small;
+    }
+
+    count {
+        font-weight: bold;
+    }
+}
